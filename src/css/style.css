@@ -15,28 +15,25 @@
    ========================================================================== */
 @font-face {
   font-family: myFirstFont;
-  src: url(fonts/Franklin Gothic Demi Cond Regular.ttf);
+  src: url(../fonts/Franklin Gothic Demi Cond Regular.ttf);
 }
 /* ==========================================================================
    Elements
    ========================================================================== */
 /* ---------------------------------------------
-			Buttons
+		Buttons
    --------------------------------------------- */
 .btn {
-  background-color: blue;
-  display: inline-block;
-  text-decoration: none;
+  background-color: #119922;
   color: #fff;
+  padding: 12px 8px;
+  border-radius: 15px;
+  border: 2px solid #119922;
+  font-weight: 600;
 }
 .btn:hover {
-  color: blue;
-  text-decoration: none;
+  color: #119922;
   background-color: #fff;
-  border: 1px solid blue;
-}
-.btn-sm {
-  padding: 20px;
 }
 /* ==========================================================================
    Layout
@@ -45,40 +42,65 @@
    Homepage
    ========================================================================== */
 /* ---------------------------------------------
-      Header
+      Body
    --------------------------------------------- */
-.main-header {
-  font-family: myFirstFont;
+body .background {
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
 }
-.logo-text {
-  text-indent: -9999px;
+body .container {
+  max-width: 960px;
+  text-align: center;
+  position: relative;
+  margin: 0px auto;
+  top: -1300px;
 }
 /* ---------------------------------------------
-      Slider
+      Header
    --------------------------------------------- */
-.cycle-prev,
-.cycle-next {
-  display: inline-block;
+.main-header h1 {
+  font-size: 36px;
+  font-family: myFirstFont;
+  margin: 10px 0px;
+  padding-top: 50px;
+}
+.main-header h2 {
+  font-size: 24px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 15px 0px 80px 0px;
+}
+/* ---------------------------------------------
+      main-section
+   --------------------------------------------- */
+.main-section p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.main-section form {
+  margin: 15px 0px;
+}
+.main-section form .email {
+  padding: 8px 15px;
+  border-radius: 0px;
+  border: 0px;
+  -webkit-box-shadow: 2px 2px 1px #999;
+          box-shadow: 2px 2px 1px #999;
+  margin-right: 5px;
+  color: #000;
+}
+.main-section form .email::-webkit-input-placeholder {
+  color: #888;
 }
 /* ---------------------------------------------
       Footer
    --------------------------------------------- */
-footer {
-  height: 700px;
-  background-color: green;
+footer li {
+  display: inline-block;
+  margin-right: 5px;
 }
-/* ---------------------------------------------
-      UpScroll
-   --------------------------------------------- */
-.uparrow {
-  background: url('../img/uparrow.png');
-  cursor: pointer;
-  width: 66px;
-  height: 67px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  display: none;
+footer li:last-child {
+  margin-right: 0px;
 }
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480
@@ -89,6 +111,44 @@ footer {
 
    Also, may modify and just make breakpoints where site goes wrong.
 --------------------------------------------*/
+@media all and (min-width: 1280px) and (max-width: 1600px) {
+  body .container {
+    top: -1000px;
+  }
+}
+@media all and (min-width: 1100px) and (max-width: 1280px) {
+  body .container {
+    top: -900px;
+  }
+}
+@media all and (min-width: 925px) and (max-width: 1100px) {
+  body .container {
+    top: -775px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 925px) {
+  body .container {
+    top: -650px;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 768px) {
+  body .container {
+    top: -500px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 600px) {
+  body .container {
+    top: -425px;
+  }
+}
+@media all and (max-width: 480px) {
+  body .container {
+    top: -375px;
+  }
+  body .container .main-header h2 {
+    margin: 15px 0px 45px 0px;
+  }
+}
 /*-------------------------------------------------------------------------------*/
 /* Portrait */
 @media screen and (orientation: portrait) {

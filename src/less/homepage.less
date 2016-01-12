@@ -3,50 +3,82 @@
    ========================================================================== */
 
 /* ---------------------------------------------
+      Body
+   --------------------------------------------- */
+
+body { 
+  .background { 
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    max-width: 960px;
+    text-align: center;
+    position: relative;
+    margin: 0px auto;
+    top: -1300px;  
+  }
+}
+
+/* ---------------------------------------------
       Header
    --------------------------------------------- */
 
 .main-header {
-  font-family: myFirstFont;
+  h1 {
+    font-size: 36px;
+    font-family: myFirstFont;
+    margin: 10px 0px;
+    padding-top: 50px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 15px 0px 80px 0px;
+  }
 }
-
-.logo-text {
-	text-indent: -9999px;
-}
-
-
 
 /* ---------------------------------------------
-      Slider
+      main-section
    --------------------------------------------- */
+.main-section {
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
 
-.cycle-prev, .cycle-next {
-	display: inline-block;
+  form {
+    margin: 15px 0px;
+  
+    .email {
+      padding: 8px 15px;
+      border-radius: 0px;
+      border: 0px;
+      box-shadow: 2px 2px 1px #999;
+      margin-right: 5px;
+      color: #000;
+    }
+
+    .email::-webkit-input-placeholder {
+      color: #888;
+    }
+  }
 }
-
-
 
 /* ---------------------------------------------
       Footer
    --------------------------------------------- */
 
 footer {
-	height: 700px;
-	background-color: green;
-}
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
 
-
-/* ---------------------------------------------
-      UpScroll
-   --------------------------------------------- */
-
-.uparrow {
-    background: url('../img/uparrow.png');
-    cursor: pointer;
-    width: 66px;
-    height: 67px;
-    position: fixed;
-    bottom: 30px;
-    right:30px;
-    display:none;
+  li:last-child {
+    margin-right: 0px;
+  }
 }

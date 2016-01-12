@@ -19,7 +19,6 @@
      <!-- Compiled from Less files -->
     <link href="css/style.css" rel="stylesheet">
 
-
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -33,13 +32,30 @@
 </head>
 
 <body>
-    <header class="main-header">
-        
-    </header>
-       
-    <footer>
-        
-    </footer>
+    <img class="background" src="img/index-bg-01-min.jpg" alt="background">
+    <div class="container">
+        <div class="wrapper">
+            <header class="main-header">
+                <h1>Name of Company</h1>
+                <h2>Company's Slogan</h2>        
+            </header>
+            <section class="main-section">
+                <p>We are working on something great! Be notified upon its completion. Just enter your email address.</p>
+                <form action="post">
+                    <input class="email" type="email" name="email" required placeholder="email">
+                    <input class="btn" type="submit" name="submit"></input>
+                </form>
+            </section>
+    
+            <footer>
+                <ul>
+                    <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="img/google.png" alt="google"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
 
     <!-- Load Font Awesome asynchronously
     <script type="text/javascript">
@@ -52,7 +68,6 @@
         })();
     </script>
         
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 

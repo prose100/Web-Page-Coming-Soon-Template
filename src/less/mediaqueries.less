@@ -7,28 +7,70 @@
 
    Also, may modify and just make breakpoints where site goes wrong.
 --------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-
+@media all and (min-width: 1280px) and (max-width: 1600px) {
+	body { 
+		.container {
+			top: -1000px;  
+	  }
+	}
 }
 
-
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-
+@media all and (min-width: 1100px) and (max-width: 1280px) {
+	body { 
+		.container {
+			top: -900px;  
+	  }
+	}
 }
 
-
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-
+@media all and (min-width: 925px) and (max-width: 1100px) {
+	body { 
+		.container {
+			top: -775px;  
+	  }
+	}
 }
 
+@media all and (min-width: 768px) and (max-width: 925px) {
+	body { 
+		.container {
+			top: -650px;  
+	  }
+	}
+}
 
+@media all and (min-width: 600px) and (max-width: 768px) {
+	
+	body { 
+		.container {
+			top: -500px;  
+	  }
+	}		
+}
+
+@media all and (min-width: 480px) and (max-width: 600px) {
+	
+	body { 
+		.container {
+			top: -425px;  
+		}		
+	}
+}
 
 @media all and (max-width: 480px) {
 
+	body { 
+		.container {
+			top: -375px;  
+	  	
+	  	.main-header {
+				h2 {
+					margin: 15px 0px 45px 0px;
+				}
+			}
+	  }
+	}
 }
-
 
 
 
@@ -55,7 +97,7 @@
 }
 
 /* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+@media only screen8 and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
