@@ -52,23 +52,48 @@
 	
 	body { 
 		.container {
-			top: -425px;  
+			top: -435px;  
 		}		
 	}
 }
 
-@media all and (max-width: 480px) {
+@media all and (min-width: 400px) and (max-width: 480px) {
 
 	body { 
 		.container {
-			top: -375px;  
+			top: -385px;  
 	  	
-	  	.main-header {
+	  		.main-header {
 				h2 {
 					margin: 15px 0px 45px 0px;
 				}
 			}
-	  }
+		}	
+	}
+}
+
+@media all and (max-width: 400px) {
+
+	body { 
+		.container {
+			top: -320px;  
+	  	
+	  		.main-header {
+	  			h1 {
+					font-size: 24px;
+				}
+				h2 {
+					margin: 8px 0px 10px 0px;
+					font-size: 18px;
+				}
+			}
+			
+			.main-section {
+				p {
+					font-size: 15px;
+				}
+			}
+		}	
 	}
 }
 

@@ -44,8 +44,11 @@
 /* ---------------------------------------------
       Body
    --------------------------------------------- */
+body {
+  overflow-y: hidden;
+}
 body .background {
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: auto;
 }
@@ -67,7 +70,7 @@ body .container {
 }
 .main-header h2 {
   font-size: 24px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: cursive, Arial, Helvetica, sans-serif;
   margin: 15px 0px 80px 0px;
 }
 /* ---------------------------------------------
@@ -138,15 +141,30 @@ footer li:last-child {
 }
 @media all and (min-width: 480px) and (max-width: 600px) {
   body .container {
-    top: -425px;
+    top: -435px;
   }
 }
-@media all and (max-width: 480px) {
+@media all and (min-width: 400px) and (max-width: 480px) {
   body .container {
-    top: -375px;
+    top: -385px;
   }
   body .container .main-header h2 {
     margin: 15px 0px 45px 0px;
+  }
+}
+@media all and (max-width: 400px) {
+  body .container {
+    top: -320px;
+  }
+  body .container .main-header h1 {
+    font-size: 24px;
+  }
+  body .container .main-header h2 {
+    margin: 8px 0px 10px 0px;
+    font-size: 18px;
+  }
+  body .container .main-section p {
+    font-size: 15px;
   }
 }
 /*-------------------------------------------------------------------------------*/
